@@ -7,19 +7,19 @@ class Tengu < Formula
   on_macos do
     on_arm do
       url "https://github.com/tengu-apps/homebrew-tap/releases/download/tengu-v#{version}/tengu-macos-arm64"
-      sha256 "d9aa4d58d8be332cf450f740b2af5e5ec0115cc3105f6234fafe42234ba14005"
+      sha256 "efc051d28a6b7fff49f257363c73c4f9e253338b516bc156322573a9e3906228"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tengu-apps/homebrew-tap/releases/download/tengu-v#{version}/tengu-linux-arm64"
-      sha256 "1dce3a0575cf253a16b1251fc318ae26ea7cd538e236c43bbbf7fba03a5fc145"
+      sha256 "225a6ef1d75b214319413fe5af8b8cfb19297da02ef11bd6fd19776efa774caa"
     end
 
     on_intel do
       url "https://github.com/tengu-apps/homebrew-tap/releases/download/tengu-v#{version}/tengu-linux-amd64"
-      sha256 "0f83f28731cb9d3c690bd9d590cd8216b3abe8218621920251d5bf3c75646e50"
+      sha256 "f60e085bcde8ec56183c0ae1315e4711ae2500c8aecfcc8fba7584a511c955a2"
     end
   end
 
