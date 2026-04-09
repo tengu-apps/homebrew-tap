@@ -1,25 +1,25 @@
 class TenguInit < Formula
   desc "Provision Tengu PaaS servers via SSH"
   homepage "https://github.com/tengu-apps/tengu-init"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/tengu-apps/tengu-init/releases/download/v#{version}/tengu-init-apple-silicon"
-      sha256 "32e6e6998c1f065b6d443d256798b1b5c5efca91f9a3a85172d892d35e13167d"
+      sha256 "14bbc1b586989ed49f9269887f8720bbe3959de6d5a976616195474440492fb3"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tengu-apps/tengu-init/releases/download/v#{version}/tengu-init-linux-arm64"
-      sha256 "004c21296ff368db5d2a9f9fee2a61ba6c5d0e65767da48654673f4e41679c0b"
+      sha256 "01c68e3deac6a566ff15c5f8300dda9d0dc3ba9c4d76c8e3893a442fc22aa2e2"
     end
 
     on_intel do
       url "https://github.com/tengu-apps/tengu-init/releases/download/v#{version}/tengu-init-linux-amd64"
-      sha256 "dbe6ec42a56b4fd4b0992ad7ae5623eb1a4635136d421b70e2b6d5382207c718"
+      sha256 "d3842b44be217dd6d20cc281676f5a0f05bbe7cedc366d8b8331d3df47abf891"
     end
   end
 
