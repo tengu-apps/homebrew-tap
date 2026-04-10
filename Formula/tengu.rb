@@ -1,25 +1,25 @@
 class Tengu < Formula
   desc "Self-hosted PaaS for deploying web applications via git push"
   homepage "https://tengu.to"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/tengu-apps/homebrew-tap/releases/download/tengu-v#{version}/tengu-macos-arm64"
-      sha256 "5fef15d0a291901446105896cd39a35114a680734b0cba0d5239591cb52f69b0"
+      sha256 "fb21c4951852acfd151800de3cba48fc83de53285d5a4a0080c3faa935078437"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tengu-apps/homebrew-tap/releases/download/tengu-v#{version}/tengu-linux-arm64"
-      sha256 "e716608d25cb2f1361634964160e0a4b329f58db694f3cb58ae36e9b4e5d2a6a"
+      sha256 "e46a26c17ad332f5e03e52b519723c00a0e83aac83fcfe0b3471f4d595b444f0"
     end
 
     on_intel do
       url "https://github.com/tengu-apps/homebrew-tap/releases/download/tengu-v#{version}/tengu-linux-amd64"
-      sha256 "787059338966cc3010c289d06beaa95e41aa75e4947013a54a05925e423177d7"
+      sha256 "d37153bcc915e92e25c786145aa2b684da2ff26214c409819044f7cee7b37e2a"
     end
   end
 
