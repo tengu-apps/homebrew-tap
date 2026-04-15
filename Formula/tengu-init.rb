@@ -1,20 +1,8 @@
 class TenguInit < Formula
   desc "Provision Tengu PaaS servers via SSH"
   homepage "https://github.com/tengu-apps/tengu-init"
-  version "0.5.6"
+  version "0.5.7"
   license "MIT"
-
-  on_macos do
-    on_arm do
-      url "https://github.com/tengu-apps/tengu-init/releases/download/v#{version}/tengu-init-apple-silicon"
-      sha256 ""
-    end
-
-    on_intel do
-      url "https://github.com/tengu-apps/tengu-init/releases/download/v#{version}/tengu-init-macos-intel"
-      sha256 ""
-    end
-  end
 
   on_linux do
     on_arm do
@@ -29,9 +17,7 @@ class TenguInit < Formula
   end
 
   def install
-    binary_name = if OS.mac?
-      Hardware::CPU.arm? ? "tengu-init-apple-silicon" : "tengu-init-macos-intel"
-    elsif OS.linux?
+    binary_name = if OS.linux?
       Hardware::CPU.arm? ? "tengu-init-linux-arm64" : "tengu-init-linux-amd64"
     end
     bin.install binary_name => "tengu-init"
